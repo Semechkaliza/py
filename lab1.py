@@ -7,8 +7,10 @@
 
 
 import pandas as pd
+from IPython import get_ipython
+
 data = pd.read_csv('Data.csv')
-data = data[data['Name'] == 'Tim Duncan']
+data = data[data['Name'] == 'Courtney Lee']
 first_selection = data['FieldGoalsPercentage'][~data['FieldGoalsPercentage'].isin([0, 100])]
 first_selection
 
